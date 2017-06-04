@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.index.mapper.PictureMapper" >
+
+
+
+<insert id="uploadPic" parameterType="com.index.po.Picture">
+    INSERT INTO picture (p_name,p_desc,p_path)VALUES (#{name},#{desc},#{path})
+
+</insert>
+
+
+
+
+</mapper>

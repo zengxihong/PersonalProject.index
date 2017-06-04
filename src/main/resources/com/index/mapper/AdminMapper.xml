@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.index.mapper.AdminMapper" >
+
+
+    <select id="selectAdminById" parameterType="Integer" resultType="Admin" >
+        select id,username,password from admin where id =#{id}
+    </select>
+    <select id="adminLogin" parameterType="Admin" resultType="Admin" >
+        select id,username,password from admin where username =#{username} and password=#{password}
+    </select>
+
+
+
+
+
+</mapper>
